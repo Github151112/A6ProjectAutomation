@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<groups>
 		<run>
-		<include name="RT"></include>
+			<include name="RT"></include>
 		</run>
 	</groups>
 	<test thread-count="5" name="Test">

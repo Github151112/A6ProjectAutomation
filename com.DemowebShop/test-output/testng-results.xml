@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[====Server Connected Successfully......]]>
+    </line>
+    <line>
+      <![CDATA[====Database Connected Successfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Launching chrome Browser.........]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot taken successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed successfully]]>
+    </line>
+    <line>
+      <![CDATA[====Database closed successfully.........]]>
+    </line>
+    <line>
+      <![CDATA[====Server closed successfully.........]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-12-20T08:40:01Z" name="Default suite" finished-at="2024-12-20T08:40:14Z" duration-ms="13466">
+    <groups>
+      <group name="ST">
+        <method signature="ValidLoginTest.loginTestScript()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" name="loginTestScript" class="com.DemowebShop.TestScripts.ValidLoginTest"/>
+      </group> <!-- ST -->
+      <group name="RT">
+        <method signature="ValidLoginTest.loginTestScript()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" name="loginTestScript" class="com.DemowebShop.TestScripts.ValidLoginTest"/>
+      </group> <!-- RT -->
+      <group name="IT">
+        <method signature="ValidLoginTest.loginTestScript()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" name="loginTestScript" class="com.DemowebShop.TestScripts.ValidLoginTest"/>
+      </group> <!-- IT -->
+    </groups>
+    <test started-at="2024-12-20T08:40:01Z" name="Default test" finished-at="2024-12-20T08:40:14Z" duration-ms="13466">
+      <class name="com.DemowebShop.TestScripts.ValidLoginTest">
+        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:01Z" name="toConnectServer" finished-at="2024-12-20T08:40:01Z" duration-ms="38" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[====Server Connected Successfully......]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- toConnectServer -->
+        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:01Z" name="toConnectDatabase" finished-at="2024-12-20T08:40:01Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[====Database Connected Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- toConnectDatabase -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:01Z" name="setUp" finished-at="2024-12-20T08:40:09Z" duration-ms="8320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[=====Launching chrome Browser.........]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestScript()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:09Z" name="loginTestScript" finished-at="2024-12-20T08:40:13Z" duration-ms="3996" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Demo Web Shop. Logi] but found [Demo Web Shop. Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Demo Web Shop. Logi] but found [Demo Web Shop. Login]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.DemowebShop.TestScripts.ValidLoginTest.loginTestScript(ValidLoginTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot taken successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTestScript -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:14Z" name="tearDown" finished-at="2024-12-20T08:40:14Z" duration-ms="677" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:14Z" name="toCloseDatabase" finished-at="2024-12-20T08:40:14Z" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[====Database closed successfully.........]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- toCloseDatabase -->
+        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.DemowebShop.TestScripts.ValidLoginTest@4f3bbf68]" started-at="2024-12-20T08:40:15Z" name="toCloseServer" finished-at="2024-12-20T08:40:15Z" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[====Server closed successfully.........]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- toCloseServer -->
+      </class> <!-- com.DemowebShop.TestScripts.ValidLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

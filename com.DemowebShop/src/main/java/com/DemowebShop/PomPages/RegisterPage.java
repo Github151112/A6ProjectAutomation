@@ -11,7 +11,7 @@ public class RegisterPage extends BaseClass {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id = "gender-male")
+	@FindBy(id = "gender-m")
 	private WebElement maleRadioButton;
 
 	@FindBy(id = "gender-female")
